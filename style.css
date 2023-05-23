@@ -21,20 +21,26 @@ body {
 
 .container {
   width: 40rem !important;
-  height: 20rem;
+  height: min-content;
   position: relative;
   overflow: hidden;
 }
 
 .timer-container {
   width: 100%;
+  height: min-content;
   /* border: 1px solid red; */
   display: grid;
   justify-content: stretch;
   justify-items: center;
 }
 
-.timer {
+.time {
+  box-shadow: 0 0rem 2rem #00000035;
+  border-radius: 1rem;
+  background-color: #ffffff25;
+  backdrop-filter: blur(10px);
+  padding: 2rem 6rem;
 }
 
 .btn-group {
@@ -48,6 +54,9 @@ button {
   gap: 0.5rem;
   width: 33%;
 }
+button:hover {
+  background-color: #3a3458 !important;
+}
 
 button i {
   font-size: 2.4rem;
@@ -58,5 +67,6 @@ button i {
   top: -9rem;
   left: -4rem;
   font-size: 20rem;
-  color: #44444415;
+  color: #5e548e25;
+  transform: rotate(-25deg);
 }
