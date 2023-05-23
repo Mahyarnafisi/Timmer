@@ -16,12 +16,47 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background-color: #eeeeee;
+  background-color: #5e548e !important;
 }
 
 .container {
-  height: 30rem;
+  width: 40rem !important;
+  height: 20rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.timer-container {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: grid;
+  justify-content: stretch;
+  justify-items: center;
 }
 
 .timer {
+}
+
+.btn-group {
+  width: 100%;
+}
+
+button {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 33%;
+}
+
+button i {
+  font-size: 2.4rem;
+}
+
+.bg-icon {
+  position: absolute;
+  top: -9rem;
+  left: -4rem;
+  font-size: 20rem;
+  color: #44444415;
 }
