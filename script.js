@@ -3,6 +3,18 @@ let [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
 let timeRef = document.querySelector(".time");
 let int = null;
 
+window.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    if (int !== null) {
+      int = clearInterval(int);
+      int = null;
+    } else {
+      int = setInterval(displayTimer, 10);
+    }
+  }
+  return;
+});
+
 document.getElementById("start-timer").addEventListener("click", () => {
   if (int !== null) {
     int = clearInterval(int);
