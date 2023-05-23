@@ -65,8 +65,14 @@ button i {
 .bg-icon {
   position: absolute;
   top: -9rem;
-  left: -4rem;
+  left: -7rem;
   font-size: 20rem;
   color: #5e548e25;
   transform: rotate(-25deg);
+}
+
+span {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
 }

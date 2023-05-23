@@ -19,10 +19,11 @@ document.getElementById("pause-timer").addEventListener("click", () => {
 });
 
 document.getElementById("reset-timer").addEventListener("click", () => {
-  console.log("reset");
   clearInterval(int);
   [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
   timeRef.innerHTML = "00 : 00 : 00 : 000";
+  int = null;
+  console.log(`reset ${int}`);
 });
 
 function displayTimer() {
