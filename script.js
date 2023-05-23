@@ -7,12 +7,15 @@ document.getElementById("start-timer").addEventListener("click", () => {
   if (int !== null) {
     int = clearInterval(int);
   } else {
+    console.log(`start ${int}`);
     int = setInterval(displayTimer, 10);
   }
 });
 
 document.getElementById("pause-timer").addEventListener("click", () => {
   clearInterval(int);
+  int = null;
+  console.log(`pause ${int}`);
 });
 
 document.getElementById("reset-timer").addEventListener("click", () => {
